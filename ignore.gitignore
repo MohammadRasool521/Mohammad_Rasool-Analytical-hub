@@ -1,0 +1,10 @@
+# Node modules (if using Node.js)
+node_modules/
+
+# Compiled files (if using SCSS)
+*.css
+*.map
+
+# OS-specific files
+.DS_Store
+Thumbs.db
