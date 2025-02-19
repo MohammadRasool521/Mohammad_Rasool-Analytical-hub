@@ -21,6 +21,11 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+});
+
+
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
 
