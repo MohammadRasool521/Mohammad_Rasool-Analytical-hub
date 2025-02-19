@@ -115,6 +115,30 @@ img {
 }
 
 /*===== NAV =====*/
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+
 .nav {
   height: var(--header-height);
   display: flex;
