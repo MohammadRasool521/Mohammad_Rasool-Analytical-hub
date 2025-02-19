@@ -569,7 +569,7 @@ img {
 /* Container styling */
 .about__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: wrap;
   align-items: center;
   gap: 2rem;
   /* Adds space between video and text */
@@ -1634,5 +1634,30 @@ html {
   .card-content {
     padding: 15px;
   }
+}
+/* For Mobile Devices */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav-menu {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* For Tablets and Smaller Laptops */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
